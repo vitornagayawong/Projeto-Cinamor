@@ -1,0 +1,100 @@
+:root {
+    font-size: 0.625;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    min-height: 100vh;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid red; */
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.header_img img{
+    height: 9.6rem;
+    width: 12rem;
+    /* border: 1px solid red; */
+    
+}
+
+.header_nav {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4rem;
+    
+}
+
+.header_nav a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.8rem 1.6rem;
+    transition: background-color .5s ease-in-out;
+    border-radius: 0.3rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.header_nav a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.2);    
+}
+
+
+.header_nav a:nth-child(5) {
+    margin-right: 8rem;
+}   
+ 
+.home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to bottom, white, rgb(181, 217, 230));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home_presentation {
+    text-align: center;
+    width: 50%;
+}
+
+.home_img img {
+    width: 24.22rem;
+    height: 32rem;
+    flex-grow: 1;
+}
+ 
+
+
+/*
+
+tradicional 
+nutella 
+tradicional com nozes 
+doce de leite
+doce de leite com nozes
+nutella com nozes
+pistachio
+
+*/
+
+.portifolio {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+
+    grid-template-areas: 
+    "";
+}
