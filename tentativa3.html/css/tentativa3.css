@@ -81,20 +81,81 @@ body {
 /*
 
 tradicional 
-nutella 
 tradicional com nozes 
+nutella 
+nutella com nozes
 doce de leite
 doce de leite com nozes
-nutella com nozes
 pistachio
 
 */
 
+.portifolio_apresentacao {
+    text-align: center;
+    padding: 4rem;
+
+}
+
+.portifolio_container {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+.portifolio_container_1 {
+    border: 1px solid rgba(0,0,0,0.2);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*
 .portifolio {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 20rem);
+    grid-template-rows: repeat(2, 1fr); 
+    width: 30rem;
+    height: 20rem;  
+    margin: auto;
+} 
 
-    grid-template-areas: 
-    "";
+.portifolio img {
+    height: 300px;
+    width: calc(90vw / 3);
 }
+
+.portifolio_tradicional {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.portifolio_tradicionalNozes {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.portifolio_doceleite {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.portifolio_doceleiteNozes {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.portifolio_nutella {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;    
+}
+
+.portifolio_nutellaNozes {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+*/
