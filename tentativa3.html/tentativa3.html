@@ -9,22 +9,24 @@
   <link href="css/bootstrap.css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/tentativa3.css">
-
-
 </head>
 
 <body>
   <header class="header">
+
     <div class="header_img ">
       <img src="../imagens/1.jpeg" alt="">
     </div>
+
     <nav class="header_nav">
-      <a href="">Home</a>
-      <a href="">Portifólio</a>
-      <a href="">Localização</a>
-      <a href="">Depoimentos</a>
-      <a href="">Sobre nós</a>
+      <a href="#">Home</a>
+      <a href="#portifolio_apresentacao">Portifólio</a>
+
+      <a href="#feedback">Depoimentos</a>
+      <a href="#location">Localização</a>
+      <a href="">Contatos</a>
     </nav>
+
   </header>
 
   <main>
@@ -42,7 +44,14 @@
       </div>
     </div>
 
-    <div class="portifolio_apresentacao">
+    <div class="video_container">
+      <h2>Prontos para experimentar?</h2>
+      <video controls autoplay muted loop class="video_container_v">
+        <source src="../vídeo/WhatsApp Video 2024-04-10 at 15.47.24.mp4">
+      </video>
+    </div>
+
+    <div class="portifolio_apresentacao" id="portifolio_apresentacao">
       <h2>Conheça nossos sabores</h2>
     </div>
 
@@ -52,85 +61,142 @@
 
         <div class="portifolio_container_1_sabor">
           <img src="../imagens/tradicional350x428.jpg" alt="">
-          <div>
+          <div class="portifolio_container_content1">
             <h3>Tradicional</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam ex unde, quos nostrum quidem illo nam beatae error facilis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam ex unde, quos nostrum quidem
+              illo nam beatae error facilis?</p>
+          </div>
+          <div class="portifolio_container_cart">
+            <img src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
+            <img onclick="add_cart('tradicional')" src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
           </div>
         </div>
 
         <div class="portifolio_container_1_sabor">
-          <img src="../imagens/WhatsApp Image 2024-04-11 at 20.53.09.jpeg" alt="">
-          <div>
-            <h3>Tradicional</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam ex unde, quos nostrum quidem illo nam beatae error facilis?</p>
+          <img src="../imagens/fotos 350x428/tradicionalNozes.jpeg" alt="">
+          <div class="portifolio_container_content1">
+            <h3>Tradicional com nozes</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam ex unde, quos nostrum quidem
+              illo nam beatae error facilis?</p>
+          </div>
+          <div class="portifolio_container_cart">
+            <img src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
+            <img onclick="add_cart('tradicional-com-nozes')" src="../imagens/cartadd.png" alt=""
+              title="Adicionar ao carrinho">
           </div>
         </div>
 
         <div class="portifolio_container_1_sabor">
-          <img src="../imagens/WhatsApp Image 2024-04-11 at 20.53.09.jpeg" alt="">
-          <div>
-            <h3>Tradicional</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam ex unde, quos nostrum quidem illo nam beatae error facilis?</p>
+          <img src="../imagens/fotos 350x428/nutella.jpeg" alt="">
+          <div class="portifolio_container_content1">
+            <h3>Nutella</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam ex unde, quos nostrum quidem
+              illo nam beatae error facilis?</p>
+          </div>
+          <div class="portifolio_container_cart">
+            <img src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
+            <img src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
           </div>
         </div>
-
-       
       </div>
 
-      
+      <div class="portifolio_container_2">
 
-      <!-- carousel bootstrap -->
-      <!-- 
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../imagens/20.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../imagens/19.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../imagens/8.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../imagens/9.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-              
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+        <div class="portifolio_container_2_sabor">
+          <img src="../imagens/fotos 350x428/nutellaNozes.jpeg" alt="">
+          <div class="portifolio_container_content2">
+            <h3>Nutella com nozes</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam ex unde, quos nostrum quidem
+              illo nam beatae error facilis?</p>
           </div>
-          -->
+          <div class="portifolio_container_cart">
+            <img src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
+            <img src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+          </div>
+        </div>
 
+        <div class="portifolio_container_2_sabor">
+          <img src="../imagens/fotos 350x428/doceleite.jpeg" alt="">
+          <div class="portifolio_container_content2">
+            <h3>Doce de leite</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam ex unde, quos nostrum quidem
+              illo nam beatae error facilis?</p>
+          </div>
+          <div class="portifolio_container_cart">
+            <img src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
+            <img src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+          </div>
+        </div>
 
+        <div class="portifolio_container_2_sabor">
+          <img src="../imagens/fotos 350x428/docedeleiteNozes.png" alt="">
+          <div class="portifolio_container_content2">
+            <h3>Doce de leite com nozes</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam ex unde, quos nostrum quidem
+              illo nam beatae error facilis?</p>
+          </div>
+          <div class="portifolio_container_cart">
+            <img src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
+            <img src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="feedback_location">
+      <div class="feedback" id="feedback">
+        <h2>Depoimentos</h2>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p><i>
+                  Absolutamente sensacional. Massa macia e saborosa, canela e açúcar na medida sem ficar enjoativo. A
+                  cobertura de cream cheese é um absurdo, combina demais. E você ainda pode escolher adicionar nutella, doce
+                  de leite e/ou nozes em cada unidade. Comeria todos os dias facilmente, é incrível.
+                  Dá pra sentir em cada mordida que foi colocado muita dedicação, amor e capricho em cada etapa.
+                </i>
+              </p>
+              <a href="https://maps.app.goo.gl/RYrH4KjK6tz5j1Vj7" target="_blank">Acesse o depoimento no Google</a>
+            </div>
+            <div class="carousel-item">
+              <p><i>
+                  Uma delícia.
+                  Para quem já provou o da Cinnabon dos Estados Unidos vai perceber que o sabor é idêntico.
+                  Como eles conseguem isso?
+                  Alguns segredos que eles nos contaram foi que usam ingredientes importados e que era o doce preferido de
+                  um membro da família que imigrou para o Brasil.
+                </i>
+              </p>
+              <a href="https://maps.app.goo.gl/Th7CbR3w2Wiyi4TeA" target="_blank">Acesse o depoimento no Google</a>
+            </div>
+            <div class="carousel-item">
+              <p><i>
+                Acredito que a melhor definição seria: com amor! O sabor é divino, o atendimento é personalizado, com comunicação leve e acolhedora. Se pudesse, daria infinitas estrelas. Excelente em todos os aspectos. Recomendo daqui até minhas próximas encarnações.
+              </i>
+            </p>
+            <a href="https://maps.app.goo.gl/ctECowEJYhpXdiJNA" target="_blank">Acesse o depoimento no Google</a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="location" id="location">
+        <h2>Onde você nos encontra</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.032496374222!2d-54.58953892533829!3d-25.53729443714423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f691fbf84c8e8f%3A0x78ff0bc0277001e2!2sCINAMOR!5e0!3m2!1spt-BR!2sbr!4v1713306773034!5m2!1spt-BR!2sbr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
   </main>
 
 
@@ -138,6 +204,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+<script src="./js/index.js"></script>
 
 </html>
