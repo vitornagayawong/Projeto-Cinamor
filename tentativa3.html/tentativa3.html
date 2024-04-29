@@ -9,6 +9,8 @@
   <link href="css/bootstrap.css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/tentativa3.css">
+
+  
 </head>
 
 <body>
@@ -67,9 +69,14 @@
               illo nam beatae error facilis?</p>
           </div>
           <div class="portifolio_container_cart">
-            <img src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
-            <img onclick="add_cart('tradicional')" src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+            <img onclick="removeCart('tradicional')" src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
+            <img onclick="addCart2('tradicional')" src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+            <div class="portifolio_container_cart_qtd">
+              <p>Quantidade no carrinho</p>
+              <div id="traditional-quantity">0</div>
+            </div>
           </div>
+
         </div>
 
         <div class="portifolio_container_1_sabor">
@@ -80,9 +87,13 @@
               illo nam beatae error facilis?</p>
           </div>
           <div class="portifolio_container_cart">
-            <img src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
-            <img onclick="add_cart('tradicional-com-nozes')" src="../imagens/cartadd.png" alt=""
+            <img onclick="removeCart('tradicional-com-nozes')" src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
+            <img onclick="addCart2('tradicional-com-nozes') " src="../imagens/cartadd.png" alt=""
               title="Adicionar ao carrinho">
+            <div class="portifolio_container_cart_qtd">
+              <p>Quantidade no carrinho</p>
+              <div id="traditional-nutz-quantity">0</div>
+            </div>
           </div>
         </div>
 
@@ -94,8 +105,12 @@
               illo nam beatae error facilis?</p>
           </div>
           <div class="portifolio_container_cart">
-            <img src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
-            <img src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+            <img onclick="removeCart('nutella')" src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
+            <img onclick="addCart2('nutella')" src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+            <div class="portifolio_container_cart_qtd">
+              <p>Quantidade no carrinho</p>
+              <div id="nutella-quantity">0</div>
+            </div>
           </div>
         </div>
       </div>
@@ -110,8 +125,12 @@
               illo nam beatae error facilis?</p>
           </div>
           <div class="portifolio_container_cart">
-            <img src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
-            <img src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+            <img onclick="removeCart('nutella-com-nozes')" src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
+            <img onclick="addCart2('nutella-com-nozes')" src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+            <div class="portifolio_container_cart_qtd">
+              <p>Quantidade no carrinho</p>
+              <div id="nutella-nutz-quantity">0</div>
+            </div>
           </div>
         </div>
 
@@ -123,8 +142,12 @@
               illo nam beatae error facilis?</p>
           </div>
           <div class="portifolio_container_cart">
-            <img src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
-            <img src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+            <img onclick="removeCart('doceleite')" src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
+            <img onclick="addCart2('doceleite')" src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+            <div class="portifolio_container_cart_qtd">
+              <p>Quantidade no carrinho</p>
+              <div id="doceleite-quantity">0</div>
+            </div>
           </div>
         </div>
 
@@ -138,6 +161,10 @@
           <div class="portifolio_container_cart">
             <img src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
             <img src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+            <div class="portifolio_container_cart_qtd">
+              <p>Quantidade no carrinho</p>
+              <div id="doceleite-nutz-quantity">0</div>
+            </div>
           </div>
         </div>
 
@@ -153,7 +180,8 @@
             <div class="carousel-item active">
               <p><i>
                   Absolutamente sensacional. Massa macia e saborosa, canela e açúcar na medida sem ficar enjoativo. A
-                  cobertura de cream cheese é um absurdo, combina demais. E você ainda pode escolher adicionar nutella, doce
+                  cobertura de cream cheese é um absurdo, combina demais. E você ainda pode escolher adicionar nutella,
+                  doce
                   de leite e/ou nozes em cada unidade. Comeria todos os dias facilmente, é incrível.
                   Dá pra sentir em cada mordida que foi colocado muita dedicação, amor e capricho em cada etapa.
                 </i>
@@ -165,7 +193,8 @@
                   Uma delícia.
                   Para quem já provou o da Cinnabon dos Estados Unidos vai perceber que o sabor é idêntico.
                   Como eles conseguem isso?
-                  Alguns segredos que eles nos contaram foi que usam ingredientes importados e que era o doce preferido de
+                  Alguns segredos que eles nos contaram foi que usam ingredientes importados e que era o doce preferido
+                  de
                   um membro da família que imigrou para o Brasil.
                 </i>
               </p>
@@ -173,10 +202,12 @@
             </div>
             <div class="carousel-item">
               <p><i>
-                Acredito que a melhor definição seria: com amor! O sabor é divino, o atendimento é personalizado, com comunicação leve e acolhedora. Se pudesse, daria infinitas estrelas. Excelente em todos os aspectos. Recomendo daqui até minhas próximas encarnações.
-              </i>
-            </p>
-            <a href="https://maps.app.goo.gl/ctECowEJYhpXdiJNA" target="_blank">Acesse o depoimento no Google</a>
+                  Acredito que a melhor definição seria: com amor! O sabor é divino, o atendimento é personalizado, com
+                  comunicação leve e acolhedora. Se pudesse, daria infinitas estrelas. Excelente em todos os aspectos.
+                  Recomendo daqui até minhas próximas encarnações.
+                </i>
+              </p>
+              <a href="https://maps.app.goo.gl/ctECowEJYhpXdiJNA" target="_blank">Acesse o depoimento no Google</a>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -198,6 +229,10 @@
       </div>
     </div>
   </main>
+
+  <footer class="foot">
+    <p>Site Cinamor</p>
+  </footer>
 
 
 </body>
