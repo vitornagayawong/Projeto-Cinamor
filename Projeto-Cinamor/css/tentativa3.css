@@ -327,3 +327,40 @@ pistachio
     text-align: center;
     margin-bottom: 0;
 }
+
+#title{
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+}
+.contact{
+    background: linear-gradient(to bottom, white 30%, var(--primary-color));
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 2rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333; 
+}
+
+.contact a img {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    transition: transform 0.3s ease; 
+}
+
+.contact a img:hover {
+    transform: scale(1.1); 
+}
+
