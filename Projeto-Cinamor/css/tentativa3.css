@@ -365,3 +365,29 @@ pistachio
     transform: scale(1.1); 
 }
 
+
+.novo_sabor_wrapper{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    margin: 1rem auto;
+    bottom: 8rem;
+}
+
+.img_wrapper{
+    width: 100%;
+}
+
+img{
+    object-fit: cover !important;
+}
+.img_wrapper_frente>img{
+    width: 100%;
+    height: 450px;
+}
+
+.text_wrapper{
+    transition: all ease-in-out;
+}
