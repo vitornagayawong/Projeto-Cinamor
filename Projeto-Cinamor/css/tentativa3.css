@@ -125,7 +125,7 @@ pistachio
 
 .portifolio_container {
     display: flex;
-    width: 30%;
+    width: 80%;
     flex-direction: column;
     align-content: center;
     margin: auto;
@@ -365,15 +365,23 @@ pistachio
     transform: scale(1.1); 
 }
 
-
+.end_contact{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 880px;
+    flex-direction: column;
+    gap: 3px;
+}
 .novo_sabor_wrapper{
     display: grid;
     grid-template-columns: 40% 60%;
     width: 80%;
     margin: auto;
-    gap: 1rem;
+    gap: 20px;
     margin: 1rem auto;
     bottom: 8rem;
+    background-color: rgb(253, 223, 228);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .img_wrapper{
@@ -384,10 +392,11 @@ img{
     object-fit: cover !important;
 }
 .img_wrapper_frente>img{
-    width: 100%;
+    width: 500px;
     height: 450px;
 }
 
 .text_wrapper{
     transition: all ease-in-out;
+    width: 500px;
 }
