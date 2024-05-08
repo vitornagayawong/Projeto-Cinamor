@@ -399,4 +399,12 @@ img{
 .text_wrapper{
     transition: all ease-in-out;
     width: 500px;
+    margin-left: 250px;
+}
+
+.card_text{
+    height: 190px;
+    text-align: justify;
+    margin: 0px 15px 15px 15px;
+
 }
