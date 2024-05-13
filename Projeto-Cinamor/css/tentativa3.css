@@ -15,6 +15,8 @@ body {
 .header {
     display: flex;
     width: 100%;
+    justify-content: space-around;
+    padding:  0 0 0 3rem;
     /* border: 1px solid red; */
     border-bottom: 1px solid rgba(71, 71, 71, 0.007);
     position: sticky;
@@ -22,24 +24,31 @@ body {
     background-color: white;
     background: linear-gradient(to top, white 10% , var(--primary-color));
     z-index: 1;
-}
+    margin: auto;
 
-.header_img img{
-    height: 9.6rem;
-    width: 12rem;
-    /* border: 1px solid red; */
-    
 }
 
 .header_nav {
     /* border: 1px solid red; */
-    width: 100%;
+    /* width: 100%; */
+
     display: flex;
+    flex: 1;
     align-items: center;
-    justify-content: flex-end;
-    gap: 4rem;
+    justify-content: center;
+    gap: 2rem;
     
 }
+
+.header_img img{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 4.6rem;
+    object-fit: cover;
+    margin: 10px;
+}
+
 
 .header_nav a {
     font-size: 1.2rem;
@@ -395,7 +404,11 @@ img{
     width: 500px;
     height: 450px;
 }
-
+.right-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .text_wrapper{
     transition: all ease-in-out;
     width: 500px;
