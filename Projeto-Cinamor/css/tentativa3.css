@@ -373,7 +373,7 @@ pistachio
     gap: 3px;
 }
 .novo_sabor_wrapper{
-    display: grid;
+    display: flex;
     grid-template-columns: 40% 60%;
     width: 80%;
     margin: auto;
@@ -399,7 +399,6 @@ img{
 .text_wrapper{
     transition: all ease-in-out;
     width: 500px;
-    margin-left: 250px;
 }
 
 .card_text{
