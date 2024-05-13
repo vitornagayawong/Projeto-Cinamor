@@ -1,7 +1,6 @@
-
 var cart = []
 
-function Item(itemName, quantity){
+function Item(itemName, quantity) {
     this.itemName = itemName;
     this.quantity = quantity;
 }
@@ -15,7 +14,7 @@ cart.push(new Item('doceleite-com-nozes', 0))
 
 // function add_cart(itemName){
 
-    
+
 //     let found = false;
 
 //     for(let i = 0 ; i < cart.length ; i++){
@@ -46,12 +45,12 @@ cart.push(new Item('doceleite-com-nozes', 0))
 //     // });
 // }
 
-function addCart2(nomeProduto){
-    for(let i = 0 ; i < cart.length ; i++){
-        if(cart[i].itemName == nomeProduto) {
+function addCart2(nomeProduto) {
+    for (let i = 0; i < cart.length; i++) {
+        if (cart[i].itemName == nomeProduto) {
             cart[i].quantity++
-            console.log(cart[i].quantity)
-            if(nomeProduto == 'tradicional') {
+                console.log(cart[i].quantity)
+            if (nomeProduto == 'tradicional') {
                 document.getElementById("traditional-quantity").innerHTML = cart[i].quantity
             } else if (nomeProduto == 'tradicional-com-nozes') {
                 document.getElementById("traditional-nutz-quantity").innerHTML = cart[i].quantity
@@ -62,7 +61,7 @@ function addCart2(nomeProduto){
             } else if (nomeProduto == 'doceleite') {
                 document.getElementById("doceleite-quantity").innerHTML = cart[i].quantity
             } else {
-                
+
             }
         }
     }
@@ -71,28 +70,28 @@ function addCart2(nomeProduto){
 }
 
 function removeCart(nomeProduto) {
-    for(let i = 0 ; i < cart.length ; i++){
-        if(cart[i].itemName == nomeProduto){
+    for (let i = 0; i < cart.length; i++) {
+        if (cart[i].itemName == nomeProduto) {
             cart[i].quantity--
-            console.log(cart[i].quantity)
-            if(cart[i].quantity < 0) {
+                console.log(cart[i].quantity)
+            if (cart[i].quantity < 0) {
                 cart[i].quantity = 0
             } else {
-                if(nomeProduto == 'tradicional') {
+                if (nomeProduto == 'tradicional') {
                     document.getElementById("traditional-quantity").innerHTML = cart[i].quantity
-                    // console.log(cart[i].quantity)
+                        // console.log(cart[i].quantity)
                 } else if (nomeProduto == 'tradicional-com-nozes') {
                     document.getElementById("traditional-nutz-quantity").innerHTML = cart[i].quantity
-                    // console.log(cart[i].quantity)
+                        // console.log(cart[i].quantity)
                 } else if (nomeProduto == 'nutella') {
                     document.getElementById("nutella-quantity").innerHTML = cart[i].quantity
-                    // console.log(cart[i].quantity)
+                        // console.log(cart[i].quantity)
                 } else if (nomeProduto == 'nutella-com-nozes') {
                     document.getElementById("nutella-nutz-quantity").innerHTML = cart[i].quantity
-                    // console.log(cart[i].quantity)
+                        // console.log(cart[i].quantity)
                 } else if (nomeProduto == 'doceleite') {
                     document.getElementById("doceleite-quantity").innerHTML = cart[i].quantity
-                    // console.log(cart[i].quantity)
+                        // console.log(cart[i].quantity)
                 }
             }
         }
@@ -108,7 +107,7 @@ function removeCart(nomeProduto) {
 // function addToNumber(itemName) {
 //     let valor = document.getElementById('portifolio_container_cart_qtd_number')
 //     valor.innerHTML++    
-    
+
 // }
 
 // function removeFromNumber() {
@@ -119,3 +118,22 @@ function removeCart(nomeProduto) {
 //         valor.innerHTML = 0
 //     }
 // }
+function calculateTotal() {
+    let total = 0;
+    cart.forEach(item => {
+        total += item.quantity; // Adicione o preço aqui se tiver preços definidos
+    });
+    return total;
+}
+
+document.getElementById('checkoutButton').addEventListener('click', function() {
+    const total = calculateTotal();
+    checkout(total);
+});
+
+function checkout(total) {
+    alert(`O total da sua compra é: ${total}`); // Apenas para exemplo
+    // Aqui você pode adicionar a integração com o gateway de pagamento
+    // Ou redirecionar para uma página de confirmação
+    window.location.href = 'https://wa.me/554591099193'; // Exemplo de redirecionamento
+}
