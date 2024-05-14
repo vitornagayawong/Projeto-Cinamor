@@ -4,13 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Cinamor</title>
     <link href="css/bootstrap.css" rel="stylesheet">
-
     <link rel="stylesheet" href="css/tentativa3.css">
-
-
 </head>
 
 <body>
@@ -32,6 +28,7 @@
     </header>
 
     <main>
+
         <div class="home">
             <div class="home_presentation">
                 <h1>Melhores Cinammons você encontra aqui!</h1>
@@ -47,8 +44,8 @@
         <div class="video_container">
             <h2>Prontos para experimentar?</h2>
             <video controls autoplay muted loop class="video_container_v">
-        <source src="../vídeo/WhatsApp Video 2024-04-10 at 15.47.24.mp4">
-      </video>
+                <source src="../vídeo/WhatsApp Video 2024-04-10 at 15.47.24.mp4">
+            </video>
         </div>
 
         <div class="portifolio_apresentacao" id="portifolio_apresentacao">
@@ -56,9 +53,7 @@
         </div>
 
         <div class="portifolio_container">
-
             <div class="portifolio_container_1">
-
                 <div class="portifolio_container_1_sabor">
                     <img src="../imagens/tradicional350x428.jpg" alt="">
                     <div class="portifolio_container_content1">
@@ -67,13 +62,12 @@
                     </div>
                     <div class="portifolio_container_cart">
                         <img onclick="removeCart('tradicional')" src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
-                        <img onclick="addCart2('tradicional')" src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+                        <img onclick="addCart('tradicional')" src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
                         <div class="portifolio_container_cart_qtd">
                             <p>Quantidade no carrinho</p>
                             <div id="traditional-quantity">0</div>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="portifolio_container_1_sabor">
@@ -84,7 +78,7 @@
                     </div>
                     <div class="portifolio_container_cart">
                         <img onclick="removeCart('tradicional-com-nozes')" src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
-                        <img onclick="addCart2('tradicional-com-nozes') " src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+                        <img onclick="addCart('tradicional-com-nozes') " src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
                         <div class="portifolio_container_cart_qtd">
                             <p>Quantidade no carrinho</p>
                             <div id="traditional-nutz-quantity">0</div>
@@ -100,7 +94,7 @@
                     </div>
                     <div class="portifolio_container_cart">
                         <img onclick="removeCart('nutella')" src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
-                        <img onclick="addCart2('nutella')" src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+                        <img onclick="addCart('nutella')" src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
                         <div class="portifolio_container_cart_qtd">
                             <p>Quantidade no carrinho</p>
                             <div id="nutella-quantity">0</div>
@@ -110,7 +104,6 @@
             </div>
 
             <div class="portifolio_container_2">
-
                 <div class="portifolio_container_2_sabor">
                     <img src="../imagens/fotos 350x428/nutellaNozes.jpeg" alt="">
                     <div class="portifolio_container_content2">
@@ -119,7 +112,7 @@
                     </div>
                     <div class="portifolio_container_cart">
                         <img onclick="removeCart('nutella-com-nozes')" src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
-                        <img onclick="addCart2('nutella-com-nozes')" src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+                        <img onclick="addCart('nutella-com-nozes')" src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
                         <div class="portifolio_container_cart_qtd">
                             <p>Quantidade no carrinho</p>
                             <div id="nutella-nutz-quantity">0</div>
@@ -135,7 +128,7 @@
                     </div>
                     <div class="portifolio_container_cart">
                         <img onclick="removeCart('doceleite')" src="../imagens/cartremove.png" alt="" title="Remover do carrinho">
-                        <img onclick="addCart2('doceleite')" src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
+                        <img onclick="addCart('doceleite')" src="../imagens/cartadd.png" alt="" title="Adicionar ao carrinho">
                         <div class="portifolio_container_cart_qtd">
                             <p>Quantidade no carrinho</p>
                             <div id="doceleite-quantity">0</div>
@@ -170,45 +163,47 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <p><i>
-                  Absolutamente sensacional. Massa macia e saborosa, canela e açúcar na medida sem ficar enjoativo. A
-                  cobertura de cream cheese é um absurdo, combina demais. E você ainda pode escolher adicionar nutella,
-                  doce
-                  de leite e/ou nozes em cada unidade. Comeria todos os dias facilmente, é incrível.
-                  Dá pra sentir em cada mordida que foi colocado muita dedicação, amor e capricho em cada etapa.
-                </i>
+                                    Absolutamente sensacional. Massa macia e saborosa, canela e açúcar na medida sem
+                                    ficar enjoativo. A cobertura de cream cheese é um absurdo, combina demais. E você
+                                    ainda pode escolher adicionar nutella, doce de leite e/ou nozes em cada unidade.
+                                    Comeria todos os dias facilmente, é incrível. Dá pra sentir em cada mordida que foi
+                                    colocado muita dedicação, amor e capricho em cada etapa.
+                                </i>
                             </p>
-                            <a href="https://maps.app.goo.gl/RYrH4KjK6tz5j1Vj7" target="_blank">Acesse o depoimento no Google</a>
+                            <a href="https://maps.app.goo.gl/RYrH4KjK6tz5j1Vj7" target="_blank">Acesse o depoimento no
+                                Google</a>
                         </div>
                         <div class="carousel-item">
                             <p><i>
-                  Uma delícia.
-                  Para quem já provou o da Cinnabon dos Estados Unidos vai perceber que o sabor é idêntico.
-                  Como eles conseguem isso?
-                  Alguns segredos que eles nos contaram foi que usam ingredientes importados e que era o doce preferido
-                  de
-                  um membro da família que imigrou para o Brasil.
-                </i>
+                                    Uma delícia. Para quem já provou o da Cinnabon dos Estados Unidos vai perceber que o
+                                    sabor é idêntico. Como eles conseguem isso? Alguns segredos que eles nos contaram
+                                    foi que usam ingredientes importados e que era o doce preferido de um membro da
+                                    família que imigrou para o Brasil.
+                                </i>
                             </p>
-                            <a href="https://maps.app.goo.gl/Th7CbR3w2Wiyi4TeA" target="_blank">Acesse o depoimento no Google</a>
+                            <a href="https://maps.app.goo.gl/Th7CbR3w2Wiyi4TeA" target="_blank">Acesse o depoimento no
+                                Google</a>
                         </div>
                         <div class="carousel-item">
                             <p><i>
-                  Acredito que a melhor definição seria: com amor! O sabor é divino, o atendimento é personalizado, com
-                  comunicação leve e acolhedora. Se pudesse, daria infinitas estrelas. Excelente em todos os aspectos.
-                  Recomendo daqui até minhas próximas encarnações.
-                </i>
+                                    Acredito que a melhor definição seria: com amor! O sabor é divino, o atendimento é
+                                    personalizado, com comunicação leve e acolhedora. Se pudesse, daria infinitas
+                                    estrelas. Excelente em todos os aspectos. Recomendo daqui até minhas próximas
+                                    encarnações.
+                                </i>
                             </p>
-                            <a href="https://maps.app.goo.gl/ctECowEJYhpXdiJNA" target="_blank">Acesse o depoimento no Google</a>
+                            <a href="https://maps.app.goo.gl/ctECowEJYhpXdiJNA" target="_blank">Acesse o depoimento no
+                                Google</a>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
             <div class="location" id="location">
@@ -218,10 +213,8 @@
             </div>
         </div>
     </main>
-    <div class="buttonzap">
-        <button id="whatsappCheckout" class="btn btn-success">Finalizar Compra</button>
 
-    </div>
+    <button id="checkoutButton" class="buttonzap "><img src="/imagens/finalizar compra.png" alt=""></button>
 
     <footer class="foot">
         <p>Site Cinamor</p>

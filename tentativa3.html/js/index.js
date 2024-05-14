@@ -12,40 +12,7 @@ cart.push(new Item('nutella-com-nozes', 0))
 cart.push(new Item('doceleite', 0))
 cart.push(new Item('doceleite-com-nozes', 0))
 
-// function add_cart(itemName){
-
-
-//     let found = false;
-
-//     for(let i = 0 ; i < cart.length ; i++){
-
-//         if(cart[i].name === itemName){
-//             cart[i].itemQuantity += 1; 
-//             found = true;
-
-//             const qtd_tradicional = document.getElementById('portifolio_container_cart_qtd_number1')
-
-
-//             if(itemName == "tradicional") {
-//                 qtd_tradicional.textContent++
-//             }
-
-//             break;
-//         }
-//     }
-
-//     if(found == false){
-//         cart.push(itemName)       
-//     }
-
-//      localStorage.setItem("cart", JSON.stringify(cart));
-
-//     // cart.forEach(nome => {
-//     //     console.log(nome)
-//     // });
-// }
-
-function addCart2(nomeProduto) {
+function addCart(nomeProduto) {
     for (let i = 0; i < cart.length; i++) {
         if (cart[i].itemName == nomeProduto) {
             cart[i].quantity++
@@ -61,12 +28,10 @@ function addCart2(nomeProduto) {
             } else if (nomeProduto == 'doceleite') {
                 document.getElementById("doceleite-quantity").innerHTML = cart[i].quantity
             } else {
-
+                // Do nothing
             }
         }
     }
-
-    console.log(cart)
 }
 
 function removeCart(nomeProduto) {
@@ -98,42 +63,22 @@ function removeCart(nomeProduto) {
     }
 }
 
+// Função para finalizar a compra
+function finalizePurchase() {
+    // Obter os produtos selecionados
+    const carrinhoFiltrado = cart.filter((item) => item.quantity > 0);
+    const mapaQuantidades = carrinhoFiltrado.map((item) => `${item.quantity} ${item.itemName}`);
+    const mensagem = `Olá, eu gostaria de pedir: ` + mapaQuantidades.join(', ') + '. Obrigado!';
 
-
-
-
-
-
-// function addToNumber(itemName) {
-//     let valor = document.getElementById('portifolio_container_cart_qtd_number')
-//     valor.innerHTML++    
-
-// }
-
-// function removeFromNumber() {
-//     let valor = document.getElementById('portifolio_container_cart_qtd_number')
-//     valor.innerHTML--
-
-//     if(valor.innerHTML <= 0) {
-//         valor.innerHTML = 0
-//     }
-// }
-function calculateTotal() {
-    let total = 0;
-    cart.forEach(item => {
-        total += item.quantity; // Adicione o preço aqui se tiver preços definidos
-    });
-    return total;
+    // Enviar mensagem para o WhatsApp
+    sendWhatsAppMessage(mensagem);
 }
 
-document.getElementById('checkoutButton').addEventListener('click', function() {
-    const total = calculateTotal();
-    checkout(total);
-});
-
-function checkout(total) {
-    alert(`O total da sua compra é: ${total}`); // Apenas para exemplo
-    // Aqui você pode adicionar a integração com o gateway de pagamento
-    // Ou redirecionar para uma página de confirmação
-    window.location.href = 'https://wa.me/554591099193'; // Exemplo de redirecionamento
+// Função para enviar mensagem para o WhatsApp
+function sendWhatsAppMessage(message) {
+    const waUrl = `https://api.whatsapp.com/send?phone=+554598421801&text=${message}`;
+    window.open(waUrl, '_blank');
 }
+
+const checkoutButton = document.getElementById('checkoutButton')
+checkoutButton.addEventListener('click', finalizePurchase)

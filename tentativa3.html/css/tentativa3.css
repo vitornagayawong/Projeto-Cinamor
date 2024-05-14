@@ -317,9 +317,8 @@ pistachio
 }
 
 .buttonzap {
-    z-index: 2;
     right: 50px;
-    bottom: 50px;
+    bottom: 100px;
     display: flex;
     position: fixed;
 }
