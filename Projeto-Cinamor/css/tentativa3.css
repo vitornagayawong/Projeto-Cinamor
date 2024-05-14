@@ -50,13 +50,13 @@ body {
     transition: background-color .5s ease-in-out;
     border-radius: 0.3rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    transition: all 0.3 easeS;
 }
 
 .header_nav a:hover {
     cursor: pointer;
     text-decoration: none;
-    border: 1px solid rgba(0,0,0,0.5);
-    background-color: rgba(0,0,0,0.2);    
+    transform: scale(1.6); 
 }
 
 .header_nav a:last-child {
